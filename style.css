@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: brown;
+    height: 100vh;
+    color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.calcul{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 15px;
+}
+/* Utilizei o metodo translate para poder voltar 50% do eixo x e y, já que com o top e left, não fica exatamente no meio da página */
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin: 3px;
+}
+/* Usei essa cor do .background devido a pesquisas no W3schools */
+.botao:hover{
+    background-color: black;
+}
+.botaoigual{
+    width: 50px;
+    height: 106px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin: 3px;
+
+}
+.botaoigual:hover{
+    background-color: black;
+}
+.botaozero{
+    width: 106px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin: 3px;
+
+}
+.botaozero:hover{
+    background-color: black;
+}
+#resultado{
+    width: 213px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

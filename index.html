@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Calculadora em JavaScript</title>
+</head>
+<body>
+<!-- Na primeira div irá ficar toda a parte do fundo do Projeto -->
+    <div class="background">
+        <h1>Projeto Lucas Ramalho</h1>
+        <div class="calcul">
+            <h1>Calculadora</h1>
+<!-- Nessa tabela irá ficar toda a parte da calculadora, os botoões que irão conter os números e operadores matemáticos, estou utilizando parecido com o modelo padrão do Windows -->
+            <p id="resultado"></p>
+                <table>
+<!-- Nessa primeira "tr" vai conter primeira linha e assim por diante em cada "te", assim como em cada "td" irá conter a tag button, para ser clicável -->
+                    <tr>
+                        <td><button class="botao" onclick="clean()">C</button></td>
+                        <td><button class="botao" onclick="back()">←</button></td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                        <td><button class="botao" onclick="insert('*')">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="botao" onclick="insert('7')">7</button></td>
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                    </tr>
+<!-- Utilizando o rowspan para poder expandir a linha do =, para ficar ainda mais parecido com a calculadora do windows -->
+                    <tr>
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                    </tr>
+<!-- Utilizando o colspan para poder expandir a coluna do 0, para ficar ainda mais parecido com a calculadora do windows -->
+
+                    <tr>
+                        <td  colspan="2"><button class="botaozero" onclick="insert('0')">0</button></td>
+                        <td><button class="botao" onclick="insert('.')">.</button></td>
+                    </tr>
+
+                </table>
+            </p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
